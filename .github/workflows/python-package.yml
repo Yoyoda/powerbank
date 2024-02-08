@@ -22,7 +22,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: Setup PDM
       uses: pdm-project/setup-pdm@v4
-      # You are now able to use PDM in your workflow
+      with:
+        python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
         pdm install
