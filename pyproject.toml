@@ -23,4 +23,6 @@ distribution = true
 [tool.pdm.dev-dependencies]
 dev = [
     "ipython>=8.21.0",
+    "flake8>=7.0.0",
+    "pytest>=8.0.0",
 ]
